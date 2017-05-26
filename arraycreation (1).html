@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>creating an array</p>
+<p id="demo"></p>
+<p>creating an array using new operator
+</p>
+<p id="fruits"></p>
+<p>Avoid using new Array(). Use [] instead.</p>
+<p id="prefer"></p>
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+var fruits = new Array("Banana", "Orange", "Apple", "Mango");
+document.getElementById("fruits").innerHTML = fruits;
+//var points = new Array(40, 100, 1, 5, 25, 10);
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("prefer").innerHTML = points[0]; 
+document.write("display array element<br />");
+document.write(cars[1],"<br />");
+document.write(cars[4],"<br />");
+document.write(cars[3],"<br />");
+document.write("If you use a named index, JavaScript will redefine the array to a standard object.After that, all array methods and properties will produce incorrect results.<br />");
+var person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46; 
+document.write(person[0] + " " + person.length);   
+</script>
+</body>
+</html>

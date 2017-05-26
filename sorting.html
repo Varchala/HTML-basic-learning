@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The sort() method sorts an array alphabetically.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p>The sort() method sorts an array alphabetically in reverse order.</p>
+
+<button onclick="mFunction()">Try it</button>
+
+<p id="demo1"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+    fruits.sort();
+    document.getElementById("demo").innerHTML = fruits;
+}
+document.getElementById("demo1").innerHTML = fruits;
+
+function mFunction() {
+    fruits.sort();
+    fruits.reverse();
+    document.getElementById("demo1").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

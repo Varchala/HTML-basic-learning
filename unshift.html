@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The push method returns the new array length.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<p>The push method appends a new element to an array.</p>
+
+<button onclick="mFunction()">Try it</button>
+
+<p id="demo1"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = fruits.unshift("kiwi");
+}
+
+
+var frnds=["rosi","romi","ram"];
+document.getElementById("demo1").innerHTML = frnds;
+
+function mFunction() {
+frnds.unshift("sai");
+    document.getElementById("demo1").innerHTML = frnds;
+}
+</script>
+
+</body>
+</html>

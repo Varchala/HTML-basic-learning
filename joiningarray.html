@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Joining Two Arrays</h1>
+
+<p id="demo1"></p>
+
+<h1>Joining Three Arrays</h1>
+
+<p id="demo2"></p>
+
+<script>
+var arr1 = ["Cecilie", "Lone"];
+var arr2 = ["Emil", "Tobias", "Linus"];
+var arr3 = ["Robin", "Morgan"];
+var my = arr1.concat(arr2);
+
+document.getElementById("demo1").innerHTML = my;
+var myChildren = arr1.concat(arr2, arr3); 
+
+document.getElementById("demo2").innerHTML = myChildren;
+</script>
+
+</body>
+</html>

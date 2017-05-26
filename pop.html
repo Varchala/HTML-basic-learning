@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>The pop method returnes the removed item.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<p>The pop method removes the last element from an array.</p>
+<button onclick="mFunction()">Try it</button>
+<p id="last"></p>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = fruits.pop();
+}
+var frnds=["rosi","romi","ram"];
+document.getElementById("last").innerHTML = frnds;
+
+function mFunction() {
+frnds.pop();
+    document.getElementById("last").innerHTML = frnds;
+}
+</script>
+
+</body>
+</html>

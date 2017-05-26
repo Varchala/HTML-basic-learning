@@ -1,0 +1,29 @@
+<html>
+ <head><title>Stacking the images</title>
+  <style type="text/css">
+  .plane1{position:absolute;top:400px;left:40px;z-index:10px}
+  .plane2{position:absolute;top:0px;left:50px;z-index:0px}
+  .plane3{position:absolute;top:30px;left:400px;z-index:0px}
+  </style>
+    <script type="text/javascript">
+     
+      var topp="im3";
+      
+     function myfunc(newTop)
+     {
+     
+       document.getElementById(topp).style.zIndex="0";
+       document.getElementById(newTop).style.zIndex="1";
+      
+       topp=newTop;
+      }
+  
+  </script>
+ </head>
+ <body>
+  <img class="plane1" id="im1" src="img\s1.jpg" alt="image1" onclick="myfunc('im1')">
+  <img class="plane2" id="im2" src="img\s2.jpg" alt="image2" onclick="myfunc('im2')">    
+  <img class="plane3" id="im3" src="img\s3.jpg" alt="image3" onclick="myfunc('im3')">
+
+ </body>
+</html>

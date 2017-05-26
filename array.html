@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>creating an array</p>
+<p id="demo"></p>
+<p>creating an array using new operator
+</p>
+<p id="fruits"></p>
+<p>adding array element <br />
+The push method appends a new element to an array.</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="fruits1"></p>
+<p>adding array element <br />
+we cn use length function to append</p>
+<button onclick="mFunction()">Try it</button>
+<p id="fruits2"></p>
+
+
+<script>
+var cars = ["Saab","Volvo","BMW",1];
+document.getElementById("demo").innerHTML = cars;
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("fruits").innerHTML = fruits;
+//we cn use push method to append
+function myFunction() {
+    fruits.push("Lemon");
+    document.getElementById("fruits1").innerHTML = fruits;
+}
+// we cn use length function to append
+function mFunction() {
+    fruits[fruits.length] = "Lemon";
+    document.getElementById("fruits2").innerHTML = fruits;
+ 
+}
+document.write("looping array elements for fruits<br />");
+var  text, fLen, i;
+fLen = fruits.length;
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+    text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+document.write(text,"<br />");
+document.write("display array element<br />");
+document.write(cars[1],"<br />");
+document.write(cars[4],"<br />");
+document.write(cars[3],"<br />");
+document.write("<br />");
+document.write("If you use a named index, JavaScript will redefine the array to a standard object.After that, all array methods and properties will produce incorrect results.<br />");
+var person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46; 
+document.write(person[0] + " " + person.length);
+document.write("<br />");
+document.write("<br />");
+document.write("Avoid using new Array()<br />");
+var points = new Array(40);
+document.write("if its an array created using new operator  ",points[0],"<br />");    
+var point = [40];
+point[1]=[2];
+document.write("if its an array created without using new operator  ",point[0],point[1]); 
+</script>
+
+</body>
+</html>
+

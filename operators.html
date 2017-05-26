@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The / Operator</h1>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 3;
+var myFun = new Function("5 + 2");
+//typeof;
+typeof x;
+typeof myFun;
+var today = new Date();
+//Exponentiation
+var z = x ** y;
+var theDay = new Date(1995, 12, 17);
+document.write("value of z is ",z,"<br />")
+if (theDay instanceof Date) 
+{
+// statements to execute
+document.write("theDay is instanceof Date <br />");  
+}
+
+document.write("typeof operator for function is",myFun,"<br />");
+document.writeln("typeof operator for variable x is:",x,"<br />");
+document.writeln("typeof operator for variable today is:",today,"<br />");
+document.write("additions <br />")
+document.write("adding no with boolean value true is ",true+1,"<br />");
+document.write("adding no with boolean value false is ",false+1,"<br />");
+document.write("string+boolean is ", "hello"+false,"<br />");
+document.write("subtractions <br />");
+document.write("subtractions of a number frm a string is ","foo" - 3," <br />");
+</script>
+
+</body>
+</html>

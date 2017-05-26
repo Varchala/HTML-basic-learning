@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The slice() method creates a new array. It does not remove any elements from the source array.<br />
+This  slice() example slices out a part of an array starting from array element 1 ("Orange"):</p>
+
+<p id="demo"></p>
+
+<p>When the slice() method is given two arguments, it selects array elements from the start argument, and up to (but not included) the end argument:</p>
+
+<p id="2arg"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+document.getElementById("demo").innerHTML = fruits + "<br>" + citrus;
+var frnds=["rosi","romi","ram","ruby","raja"];
+var close = frnds.slice(0,2);
+document.getElementById("2arg").innerHTML = frnds + "<br>" + close;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Array elements are accessed using their index number.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="change"></p>
+
+<p>Deleting elements leaves undefined holes in an array.</p>
+
+<button onclick="mFunction()">Try it</button>
+
+<p id="del"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("change").innerHTML = fruits;
+
+function myFunction() {
+    fruits[0] = "Kiwi";
+    document.getElementById("change").innerHTML = fruits;
+}
+var frnds=["rosi","romi","ram"];
+document.getElementById("del").innerHTML = frnds;
+
+function mFunction() {
+delete frnds[0];
+    document.getElementById("del").innerHTML = frnds[0];
+    //document.getElementById("del").innerHTML = frnds;
+}
+</script>
+
+</body>
+</html>
